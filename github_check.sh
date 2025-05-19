@@ -9,7 +9,7 @@ check_changes() {
         echo "Changes detected!"
         echo "$git_status"
         # Stage all changes or git add -A for signaling of removed files
-        git add .
+        git add -A .
 
         # Commit the changes with a default message or custom message
         commit_message="Auto-commit: $(date)"
